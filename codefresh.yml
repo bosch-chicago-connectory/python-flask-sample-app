@@ -24,5 +24,6 @@ steps:
       - NAMESPACE=test
       - TILLER_NAMESPACE=kube-system
       - VALUE_image_pullPolicy=Always
+      - VALUE_image_pullSecret=codefresh-generated-r.cfcr.io-cfcr-test
       - VALUE_image_tag='${{CF_BRANCH_TAG_NORMALIZED}}-${{CF_SHORT_REVISION}}'
 
