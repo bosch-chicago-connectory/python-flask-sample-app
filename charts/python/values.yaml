@@ -4,6 +4,7 @@
 replicaCount: 1
 image:
   pullPolicy: IfNotPresent
+  pullSecret : codefresh-generated-r.cfcr.io-cfcr-test
   repository: r.cfcr.io/ci-digital-biz/bluehound/python-flask-sampleapp
   tag: with-helm
 service:
